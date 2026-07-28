@@ -1,0 +1,10 @@
+Vlaggen als SVG (vectorbestanden), dus haarscherp op elk formaat.
+
+Herkomst : flag-icons 7.5.0, https://www.npmjs.com/package/flag-icons
+Licentie : MIT — zie LICENSE-flag-icons.txt, die moet meegeleverd blijven
+Formaat  : SVG, verhouding 4:3
+Namen    : vlag-<land>.svg, dezelfde landnamen als in VLAG_SLUG in het script
+
+De oude bestanden waren PNG van 120x80. Op de spelerskaart (300x412) werd dat
+vijf keer uitvergroot, met vage randen tot gevolg. Een SVG heeft dat probleem
+niet: die wordt bij elk formaat opnieuw scherp getekend.
