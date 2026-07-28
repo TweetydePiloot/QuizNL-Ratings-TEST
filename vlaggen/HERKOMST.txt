@@ -1,10 +1,24 @@
-Vlaggen als SVG (vectorbestanden), dus haarscherp op elk formaat.
+Vlaggen als SVG — vectorbestanden, dus scherp op elk formaat.
 
-Herkomst : flag-icons 7.5.0, https://www.npmjs.com/package/flag-icons
-Licentie : MIT — zie LICENSE-flag-icons.txt, die moet meegeleverd blijven
-Formaat  : SVG, verhouding 4:3
-Namen    : vlag-<land>.svg, dezelfde landnamen als in VLAG_SLUG in het script
+WAT ZIT ERIN
+  268 vlaggen: alle landen met een ISO-code, plus de losse gebieden die in de
+  quizdata voorkomen (Engeland, Schotland, Wales, Noord-Ierland, Baskenland,
+  Jersey). Duikt er een nieuw land op in een uitslag, dan ligt de vlag er dus
+  al klaar.
 
-De oude bestanden waren PNG van 120x80. Op de spelerskaart (300x412) werd dat
-vijf keer uitvergroot, met vage randen tot gevolg. Een SVG heeft dat probleem
-niet: die wordt bij elk formaat opnieuw scherp getekend.
+WAAR ZETTEN
+  In de map vlaggen/ NAAST index.html — dus in QuizNL-Ratings-Test, de map die
+  je naar GitHub uploadt. Niet naast update.py: daar kijkt het script alleen
+  als de uitvoermap niets bevat.
+
+  De oude .png-bestanden mogen blijven staan; staan beide soorten er, dan
+  kiest het script svg. Werkt alles, gooi de png's dan weg.
+
+HERKOMST EN LICENTIE
+  flag-icons 7.5.0 — https://www.npmjs.com/package/flag-icons
+  MIT-licentie: LICENSE-flag-icons.txt moet meegeleverd blijven.
+
+WAAROM SVG
+  De oude bestanden waren PNG van 120x80. Op de spelerskaart (300x412) werd
+  dat vijf keer uitvergroot, met vage randen tot gevolg. Een SVG wordt bij elk
+  formaat opnieuw getekend en blijft dus scherp.
